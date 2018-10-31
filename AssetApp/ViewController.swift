@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var myLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func changeButtonPressed(_ sender: Any) {
+        let myColor = UIColor(named: "Baby Blue")
+        view.backgroundColor = myColor
+        myLabel.text = "My Color Changed!!!"
+        
+    }
+    
 }
 
